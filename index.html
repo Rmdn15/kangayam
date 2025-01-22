@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="3" /> -->
+    <title>Kang Ayam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <header>
+      <nav class="bgnav">
+        <div class="content-nav">
+          <div class="nav-logo">
+            <div class="logo">
+              <img class="img-logo" src="./img/filet.jpeg" alt="Kang Ayam" />
+            </div>
+            <h3>Kang Ayam</h3>
+          </div>
+          <ul class="navmenu">
+            <li>Beranda</li>
+            <li>Menu</li>
+            <li>Tentang</li>
+            <li>Kontak</li>
+            <li>
+              <button>
+                <i class="bx bxs-cart bx-sm"></i>
+                Beli
+              </button>
+            </li>
+          </ul>
+          <div class="mn-icon">
+            <div class="menu-icon" id="menu-icon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="shadow-side" id="shadow-side"></div>
+    <div class="block-sidemenu" id="block-sidemenu">
+      <ul class="sidemenu">
+        <li>Beranda</li>
+        <li>Menu</li>
+        <li>Tentang</li>
+        <li>Kontak</li>
+        <li>
+          <button>
+            <i class="bx bxs-cart bx-sm"></i>
+            Beli
+          </button>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <div class="content">
+        <div class="block-intro">
+          <div class="bg-intro">
+            <div class="bks-imgbg-intro">
+              <img class="bgimg" src="./img/bgsemen.jpeg" alt="background" />
+            </div>
+          </div>
+          <div class="intro-right">
+            <img
+              class="int-img"
+              src="./img/pahaayamplatewood.png"
+              alt="background"
+            />
+          </div>
+          <div class="text-intro">
+            <div class="h-intro">
+              <span>
+                Daging segar<br />
+                Kualitas aman & <br />Gratis pengiriman
+              </span>
+            </div>
+            <div class="s-intro">
+              <span>Nikmati waktu lebih banyak bersama keluarga</span>
+            </div>
+            <div class="btn-intro">
+              <button class="btn-bli">Beli Sekarang</button>
+              <button class="btn-sk">Syarat & Ketentuan</button>
+            </div>
+          </div>
+        </div>
+        <div class="block-offers">
+          <div class="follow">
+            <span
+              >Follow Us :
+              <i class="bx bxl-facebook-circle bx-sm"></i>
+              <i class="bx bxl-instagram bx-sm"></i>
+            </span>
+          </div>
+          <div class="judul">
+            <span>keuntungan</span>
+          </div>
+          <div class="bks-benefits">
+            <div class="benefits">
+              <div class="benefit1">
+                <div class="bks-i-ben">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA55JREFUeF7tnOt1FSEUhUklaiWaTrSSaCVqJUkqUSuJ2TqshXcxnNfmMUv4dZMA9/BxngyTu7Rbk8Dd5tMmsAEJGrIBbUAxJ7I1aHENeptS+phSepNSwucPrz//PGR+Sin9ev38OaYDsdGzNCiDeVCID2CA9aWApxjG6TIDELTk0SE+QAHSN8dY95DRgGBOX93S/jW/7yPNbiQgr+bc8gSkT4fZBVjrho4E9ONwxDrJ2r0A6X6ET2IDKqMSzClHJPye3cq5syN/ZvsoFiBLVGKDqpkgLeoxALF8CxscxaFHAa0Kp4SN1MCdbEYAXQEOQIXypwigF7ZNdJwPkN555vcCQrKHKHWlhgwc+ZOpeQFdSXsyEJcWeQBFywXTDpI7Q4NMtZwH0BXNK3NGfoQMXN08gJglg1pQUkezmXkAXdH/uP3Q/wYIoExrNnU+qnEcdvUoPklW1JzGfApgAXSVzFkCbTpP0gK6cmivAVMXshpAK2oOQjXk0hz6n2mUSpMkQPA1COsrNcBBPoOGKj0KqXkyKQFaLSks4eRNi0Jq1mgSoJVynhocBqRm8tgCtJJjbsEBpKifPK3RWoBWMa/ecAD4tEZrAWLWXLBzPHGwPjQcAWc6oNIJWsx2FBwAOvVDLQ1iOOiabWsgjYSTHX2VRQsQai44P29rHU61IM2A4/JBEUCaJwk1SDPgQAFOc6GeYV6TypeQZsEBIFeYZ5QZWkj52fqZOUfzHMlNnCqKlEkzciENpNYCesMJlRrQIsYBmRdSbzjiGbWkQdhZhqnlXMNy8ak3HMgk+T31+Wy0Ys4mpNWkEXBUz8g0GpQXN8rcesPRbtKfdVsAZXPr6ZN6wzGv2QoIX8AoQWo+SVOCSOFa+rvolG8nmAmohATztVb6Eoyzv5vWbOp8fGOkBKkJjV0d9ZxtiAaxAXk1wTPOfEfIo0EjfIVn8ZoxqtBeTuQBxEocNQti98E1vHy/WjW3BxAmZtRoKgGJnczmZc4JCmFZSSNx/eJULmVwDTpEuZIvEmsuSk5QmeQKkNxwIiZWslrV3Ew1Vy8NyvOu9DILZAq9fhAN8y1vmF/MfX9kxzlD7pEp116Hor8EHHHSYtjoGPXMJYNF2J4aJGkX665RyPFaYI3SoCwT42TSXC5YgNz2HQ0I3++NepSoZIU1A1CGhBxKc31OfeHSunhN/1mAbtOD/a8pNLu1Yp/ZGrQik39k2oCELdqANqCYFW8NEvj9Bn6r0kl6P5xfAAAAAElFTkSuQmCC"
+                  />
+                </div>
+                <div class="bks-t-ben">
+                  <span class="b-judul">Kualitas Terjamin</span>
+                  <span class="b-desc"
+                    >Prioritas utama kami adalah memberikan daging ayam dengan
+                    kualitas terbaik untuk konsumen.</span
+                  >
+                </div>
+              </div>
+              <div class="gap-benefit">&nbsp;</div>
+              <div class="benefit2">
+                <div class="bks-i-ben">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA4lJREFUeF7tm42RFCEQhblI9CJRI9GLRI1EjUSNxLtIdF/VtEVx3TQ0DQOzULW1U7ezMHy8/mO5h7BblsDD5pMnsAEpCtmANqA2J7IVtBWkKuh9COHt7fWdu/NeFfQphPAuhEBwfoUQPtw7oBRKzGNaQHhoyPvN8bS4RsP783GN95foOv57uuj4HvUBhaCRSjRbY61ptInlVlGbQO/PTwMEKB+Plew9yZb+HyPV/u+np4K+3QYEnFXaMECAAjirte6A4Aw/L2BK0sJ1BbSqamJY3QBdAQ5AdQF0FTgA5B7mrwTHHRCy1T+rhSnleV0V9HPhaMVxQvkCH/SqWRLFL0c4v5KA3AD1Ni1U1VScUlE6okxxq+a91YNNqt83cyUwUCWVJyPAkBV8vV1gbs0m9tfBrghKvIMHZVIWTtsVDkMVd+ECqNW88BCAQqaDpycwZxe12E2EipsUZDUvQAGcGcEQEDFY1USx2tCOFQGYeGVmUUysFDGCidkjo7Ra8+JsGtU+tkHO8DE5ZyRGsF6AOHsGHChwxiY66BpApRPk4Fh91yiYooOuAaRNEnb8xESCWr81CgqNk/U/XoBWhYP5Z/2PF6AVzUrNoNX4n2hd2vuRotWsDjk1YTXNUW84euQAcfKsTQdG+5x4PCSw8JvZVgqIi2LcHu7sTjmGATjsiY74plJAqTI409IinbZYIz9Xo1etD8L92GKlLJgD61Hpj4KUTQ4tCsJ3yHzuRj01YR73wlFjz4bbu43VNUoF1nGK1VMLCI4ar3TnbaXIVex7LD5IWrGVTnFk6y5ugqVRTIKzknqqTMtLQauEdrXmkhTQqqAVnHO137GG+RTyKuZV7Xe8AK1gXk1wasN8qqDZATXDaQU0a2khbeCZEkurk57V/5ijlXcUm9G8THmOJiurgmYCVLTxpYHwVpC0MQaJ/ziK2t4/EHI/aVs5iN+zKkhy0LHM6dx0/A8mrRMAFCwAe9CgtXOvWiznoCU/AFg470OwStSFaESv9PBDDxZsnxYF5QCV5h4ARo1gxUCGAdAGsgDKHf9lD2NrDzHz5xZAuQhm6W9mPvzpcuWJpQ2ypqp5VkqWFZcAuWexM0CzAJJyoK4J21mwPAF1SfXPAkPjWgBJu4hFP+WePeHa8T0BleZAtc946v0WQFKZYenr1MmXDH7JSZVMvPSeDUghtQFtQKXGxN+3FbQV1Kagfxxcskk+zYp6AAAAAElFTkSuQmCC"
+                  />
+                </div>
+                <div class="bks-t-ben">
+                  <span class="b-judul">100% Fresh</span>
+                  <span class="b-desc"
+                    >Memastikan daging ayam tetap fresh saat sampai ke tangan
+                    konsumen.</span
+                  >
+                </div>
+              </div>
+              <div class="gap-benefit">&nbsp;</div>
+              <div class="benefit3">
+                <div class="bks-i-ben">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA7JJREFUeF7tnOGVFCEQhLlMNBONRC8SNRI1Es3Ey0S3fIuPhwNUNQ3M3DI/94ah+SiKbmb3nsK+qgSeNp86gQ2ooZANaAPqM5GtoIso6E0I4WMI4cM93u8hhG+3z1765r+/9RkU9DmE8OlgKIADUPj7smsloHchhK83pUA9tWspqBWAAARgAEi5AOr51u6n0qj33pmAAAZLCV7TcwEQQE3xpxmAogEf+YwVVFx2w418NKCSAZfAYOBQCKuy4f40ChBrwBEUBvrlvrXjM9WnhoHyBuQ9MCgJS7O106WgXY3cC5DFgKEYJsexeJibkfcCsgSP2bYsCbUvFyPvAaQa8JEx597D7GqqWi2T8S8OCyAPMDkIDOK9mNt4+93h5CiAENAP0TAtW7aa2ww1cgaQOlOYidSArd7BGHicdbUPtKOMvAVIXU61nUkFbfWnqCjGz5r+VAOEgpLNaKnZuEdsWRIWf1LqPixr5E//XTVAvwi/sVbY6pKwbtmsavH8tyqg34RGrYCs3tFcElnMSslzKJaaghhAMR5IFP5jPYJgZ7pUu+VzqT4P7YcCsmbH+cB6/Uldumn/wwGls9tzlqwOMi479N9z5jQN0CpQhGVWb5kOKAXVcwRh8ZNS3Qdll1S2DJCXkav+lEJKE9jS5rMcUK+Rq1V8XvJEYKcGZPUnteRBP8i+j14RXQIQm89YwMRnl3K8SwEqGbmSAZe2plcFKPoTlgS8Rn3rqpRRl1SQJYeJJwgoqjeghEBeIEuKuOVB0v1exapFAWqbUiUvDfg1AmodcTw0IObl4kMDap2ZY5luQA2zygG1TjkloGc3aUVBLTCXqsXYHYwBhDxIOU55OAWxsB9WQQqgWvF7ivMgZTC4l1lizDOZUwEZEL6o4FE0MgNQK3L2mcqpgAwIR5x4/bzysipIPccuJqStABhpjgTYii/vW31lhPbVbJ0JwHIW7AWNiS/2pU4m9YULJQBVth6QmPhUMGxC+Td+JoB8oD2vX1RotfgUA0a/rVOBw9gsgPAgy1pX4ZQm0KJk5lTAFVB82GhQ6QRa+jKDiQO0Kuho91C+0cWqKcan+gxlwEwQXoBSRVl+C1aKFQpQvrEhGfAKQLHPmUZuNuCVgGYaebfP1EB5L7GjvizmykzuUDDeJs0MyCsjdzNgJugZCjra8SxG7m7AZwWkGrkpA2YGz9yzQkFpXC1/muIzq02amagIKv3XFMqPWZg+TPesVpAp6JmNNqAG7Q1oA+pbkFtBW0F9CvoDBPMPWD4ia8cAAAAASUVORK5CYII="
+                  />
+                </div>
+                <div class="bks-t-ben">
+                  <span class="b-judul">Free Delivery</span>
+                  <span class="b-desc"
+                    >Kami berikan gratis ongkos kirim untuk konsumen yang
+                    berjarak 5 km dari sukagalih</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-best">
+          <div class="judul">
+            <span>Best Selling</span>
+          </div>
+          <div class="bks-prod">
+            <div class="prod1">
+              <!-- img -->
+              <div class="bks-img-p">
+                <img src="./img/filet.jpeg" alt="" />
+              </div>
+              <div class="bks-b-text">
+                <div class="left-p-text">
+                  <div class="p-judul">Filet Ayam</div>
+                  <div class="p-desc">
+                    Full daging dada ayam tanpa kulit dan tulang
+                  </div>
+                </div>
+                <div class="p-rate"><i class="bx bxs-star"></i> 4.7</div>
+              </div>
+            </div>
+            <div class="gap-prod">&nbsp;</div>
+            <div class="prod2">
+              <!-- img -->
+              <div class="bks-img-p">
+                <img src="./img/pahaontheboard.jpeg" alt="" />
+              </div>
+              <div class="bks-b-text">
+                <div class="left-p-text">
+                  <div class="p-judul">Paha Ayam</div>
+                  <div class="p-desc">Paha ayam bersih siap goreng</div>
+                </div>
+                <div class="p-rate"><i class="bx bxs-star"></i> 4.7</div>
+              </div>
+            </div>
+            <div class="gap-prod">&nbsp;</div>
+            <div class="prod3">
+              <!-- img -->
+              <div class="bks-img-p">
+                <img src="./img/sayap.jpeg" alt="" />
+              </div>
+              <div class="bks-b-text">
+                <div class="left-p-text">
+                  <div class="p-judul">Sayap Ayam</div>
+                  <div class="p-desc">Sayap ayam bersih siap goreng</div>
+                </div>
+                <div class="p-rate"><i class="bx bxs-star"></i> 4.7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-testi">
+          <div class="judul">
+            <span>Testimoni</span>
+          </div>
+          <div class="content-testi">
+            <div class="testi1">
+              <div class="bks-feed">
+                <div class="star-feed">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <div class="text-feed">
+                  <span
+                    >“Ayamnya segar dan kualitasnya bagus, dan pengirimannya
+                    juga cepat, fix pasti repeat order ini mah”</span
+                  >
+                </div>
+              </div>
+              <div class="bks-profile">
+                <div class="profile-feed">
+                  <img src="./img/testi3.png" alt="" />
+                </div>
+                <div class="name-profile">
+                  <span class="name">Asep Saepudin</span>
+                  <span class="profesion">Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi2">
+              <div class="bks-feed">
+                <div class="star-feed">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <div class="text-feed">
+                  <span
+                    >“Ayamnya segar dan kualitasnya bagus, dan pengirimannya
+                    juga cepat, fix pasti repeat order ini mah”</span
+                  >
+                </div>
+              </div>
+              <div class="bks-profile">
+                <div class="profile-feed">
+                  <img src="./img/testi2.png" alt="" />
+                </div>
+                <div class="name-profile">
+                  <span class="name">Kosasih</span>
+                  <span class="profesion">Ibu Rumah Tangga</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi3">
+              <div class="bks-feed">
+                <div class="star-feed">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <div class="text-feed">
+                  <span
+                    >“Ayamnya segar dan kualitasnya bagus, dan pengirimannya
+                    juga cepat, fix pasti repeat order ini mah”</span
+                  >
+                </div>
+              </div>
+              <div class="bks-profile">
+                <div class="profile-feed">
+                  <img src="./img/testi1.png" alt="" />
+                </div>
+                <div class="name-profile">
+                  <span class="name">Ratna</span>
+                  <span class="profesion">Make Up Artist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-tentang">
+          <div class="penting-ats">
+            <div class="btn-about">
+              <button>Tentang Kami</button>
+            </div>
+            <div class="penting">
+              <p>
+                Daging berkualitas mengandung nutrisi esensial seperti protein,
+                vitamin, dan mineral yang penting untuk pertumbuhan,
+                pemeliharaan otot, dan kesehatan tubuh secara keseluruhan.
+              </p>
+            </div>
+          </div>
+          <div class="penting-bwh">
+            <div class="pipeline"></div>
+            <div class="penting1">
+              <p>
+                Daging berkualitas mengandung nutrisi esensial seperti protein,
+                vitamin, dan mineral yang penting untuk pertumbuhan,
+                pemeliharaan otot, dan kesehatan tubuh secara keseluruhan.
+              </p>
+            </div>
+            <div class="pipeline"></div>
+            <div class="penting2">
+              <p>
+                Daging berkualitas mengandung nutrisi esensial seperti protein,
+                vitamin, dan mineral yang penting untuk pertumbuhan,
+                pemeliharaan otot, dan kesehatan tubuh secara keseluruhan.
+              </p>
+            </div>
+          </div>
+          <div class="bks-claim">
+            <div class="box-claim">
+              <span class="value">5+</span>
+              <span class="claim-info">Tahun Pengalaman</span>
+            </div>
+            <div class="box-claim">
+              <span class="value">5K</span>
+              <span class="claim-info">Klien Senang</span>
+            </div>
+            <div class="box-claim">
+              <span class="value">4.7</span>
+              <span class="claim-info">Rata-Rata Penilaian</span>
+            </div>
+          </div>
+        </div>
+        <div class="block-closing">
+          <div class="bks-closing">
+            <div class="bks-img">
+              <!-- img -->
+              <img src="./img/pahasemen.jpeg" alt="" class="oneimg" />
+            </div>
+            <div class="text-close">
+              Makan Tenang Dengan Kualitas Daging Yang Baik!
+            </div>
+            <div class="pipeline">&nbsp;</div>
+            <div class="text-close2">
+              Daging dengan protein, vitamin, dan mineral yang penting untuk
+              kesehatan tubuh.
+            </div>
+            <div class="bks-img">
+              <!-- img -->
+              <img src="./img/pahasemenfull.jpeg" alt="" class="twoimg" />
+            </div>
+          </div>
+          <div class="bks-closing450">
+            <div class="bks-img450">
+              <!-- img -->
+              <img src="./img/pahasemen.jpeg" alt="" class="oneimg" />
+            </div>
+            <div class="bks-img450">
+              <!-- img -->
+              <img src="./img/pahasemenfull.jpeg" alt="" class="twoimg" />
+            </div>
+            <div class="text-close">
+              Makan Tenang Dengan Kualitas Daging Yang Baik!
+            </div>
+            <div class="pipeline">&nbsp;</div>
+            <div class="text-close2">
+              Daging dengan protein, vitamin, dan mineral yang penting untuk
+              kesehatan tubuh.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="bks-footer">
+          <div class="bks-prof">
+            <div class="bks-img">
+              <!-- img -->
+              <img src="./img/logokgayam.png" alt="" />
+            </div>
+            <div class="bks-tag">
+              <p class="tag">
+                Discover the world one adventure at a time life is short, book
+                the trip.
+              </p>
+            </div>
+          </div>
+          <div class="m-bks-link">
+            <div class="bks-link">
+              <div class="jdl-footer">Company</div>
+              <div class="fill-footer">About Us</div>
+              <div class="fill-footer">Contact</div>
+            </div>
+            <div class="bks-link">
+              <div class="jdl-footer">Company</div>
+              <div class="fill-footer">About Us</div>
+              <div class="fill-footer">Contact</div>
+            </div>
+            <div class="bks-link">
+              <div class="jdl-footer">Company</div>
+              <div class="fill-footer">About Us</div>
+              <div class="fill-footer">Contact</div>
+            </div>
+          </div>
+        </div>
+        <div class="crossline"></div>
+        <div class="copyright">
+          <span>&copy; 2023 ICHBINRAMDAN All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
