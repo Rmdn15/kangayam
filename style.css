@@ -531,6 +531,9 @@ body {
     justify-content: center;
     gap: 50px;
   }
+  .block-closing .bks-closing450 {
+    display: none;
+  }
   .bks-closing .bks-img {
     width: 150px;
     height: 150px;
@@ -1150,6 +1153,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+  }
+  .block-closing .bks-closing450 {
+    display: none;
   }
   .bks-closing .bks-img {
     width: 125px;
@@ -1870,6 +1876,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+  .block-closing .bks-closing450 {
+    display: none;
   }
   .bks-closing .bks-img {
     width: 110px;
